@@ -17,6 +17,23 @@ A production-ready, containerized machine learning microservice that predicts ho
 
 ---
 
+## System Architecture
+
+This diagram shows the key components and data flow in the MLOps House Price Prediction service:
+
+
+```mermaid
+graph TD
+  A[Client (frontend or API)] -->|POST /predict| B[FastAPI Server]
+  B --> C[ML Model Service]
+  C --> D[Model (house_model.pkl)]
+  B --> E[(PostgreSQL DB)]
+  B --> F[Monitoring: Prometheus + Grafana]
+  G[CI/CD: GitHub Actions] --> H[Docker Build + Test]
+  H --> I[Docker Compose or Kubernetes]
+```
+---
+
 ## Project Structure
 
 ```
