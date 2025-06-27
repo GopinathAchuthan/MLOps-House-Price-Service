@@ -21,7 +21,9 @@ A production-ready, containerized machine learning microservice that predicts ho
 
 This diagram shows the key components and data flow in the MLOps House Price Prediction service:
 
-![System Architecture](assets/system-architecture.png)
+<p align="center">
+  <img src="assets/system-architecture.png" alt="System Architecture" width="600"/>
+</p>
 
 ---
 
