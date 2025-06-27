@@ -21,7 +21,6 @@ A production-ready, containerized machine learning microservice that predicts ho
 
 This diagram shows the key components and data flow in the MLOps House Price Prediction service:
 
-
 ```mermaid
 graph TD
   A[Client (frontend or API)] -->|POST /predict| B[FastAPI Server]
@@ -32,6 +31,7 @@ graph TD
   G[CI/CD: GitHub Actions] --> H[Docker Build + Test]
   H --> I[Docker Compose or Kubernetes]
 ```
+
 ---
 
 ## Project Structure
